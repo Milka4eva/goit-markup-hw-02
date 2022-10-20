@@ -8,6 +8,10 @@ root{
 }
 body {
     font-family: "Roboto", sans-serif;
+    color: inherit;
+}
+
+a {
     text-decoration: none;
 }
 
@@ -166,8 +170,6 @@ address {
     line-height: 30px;
     letter-spacing: 0.03em;
 }
-
-
 
 
 

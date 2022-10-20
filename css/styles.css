@@ -8,11 +8,11 @@ root{
 }
 body {
     font-family: "Roboto", sans-serif;
+    text-decoration: none;
 }
 
 .logomain {
     font-family: "Raleway", sans-serif;
-    text-decoration: none;
     font-size: 26px;
     line-height: 31px;
     letter-spacing: 0.03em;
@@ -27,7 +27,6 @@ body {
 }
 
 .mainmenu {
-    text-decoration: none;
     font-weight: 500;
     color: var(--main-blackish);
     font-size: 14px;
@@ -135,6 +134,37 @@ address {
 
 .otheraddress {
     color: rgba(255, 255, 255, 0.6);
+}
+
+.projectselector {
+    color: var(--main-blackish);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 26px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    background-color: var(--main-grey);
+}
+
+.projectselector:hover, .projectselector:focus {
+    background-color: var(--main-blue);
+    color: var(--main-white);
+}
+
+.portfoliotitle {
+    color: var(--main-blackish);
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 36px;
+    letter-spacing: 0.06em;
+}
+
+.description {
+    color: var(--main-grey);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 30px;
+    letter-spacing: 0.03em;
 }
 
 

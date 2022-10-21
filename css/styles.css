@@ -11,6 +11,11 @@ body {
     background-color: var(--main-white);
 }
 
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
 .list {
     list-style: none;
     text-decoration: none;
@@ -22,14 +27,11 @@ body {
     line-height: 31px;
     letter-spacing: 0.03em;
     text-decoration: none;
+    color: var(--main-black);
 }
 
 .logoweb {
     color: var(--main-blue);
-}
-
-.logostudio {
-    color: var(--main-black);
 }
 
 .mainmenu {
@@ -54,7 +56,7 @@ body {
     text-decoration: none;
 }
 
-.maincontacts:hover, .maincontacts:focus {
+.maincontacts:hover .maincontacts:focus {
     color: var(--main-blue);
 }
 
@@ -155,7 +157,7 @@ address {
     background-color: var(--main-grey);
 }
 
-.projectselector:hover, .projectselector:focus {
+.projectselector:hover .projectselector:focus {
     background-color: var(--main-blue);
     color: var(--main-white);
 }

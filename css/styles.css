@@ -1,4 +1,4 @@
-root{
+:root{
     --main-blue: #2196F3;
     --main-black: #000000;
     --main-blackish: #212121;
@@ -23,8 +23,9 @@ a {
 
 .logomain {
     font-family: "Raleway", sans-serif;
+    font-weight: 700;
     font-size: 26px;
-    line-height: 31px;
+    line-height: 1.19em;
     letter-spacing: 0.03em;
     text-decoration: none;
     color: var(--main-black);
@@ -38,7 +39,7 @@ a {
     font-weight: 500;
     color: var(--main-blackish);
     font-size: 14px;
-    line-height: 16px;
+    line-height: 1.14em;
     letter-spacing: 0.02em;
     text-decoration: none;
 }
@@ -51,12 +52,12 @@ a {
     color: var(--main-grey);
     font-weight: 500;
     font-size: 14px;
-    line-height: 16px;
+    line-height: 1.14em;
     letter-spacing: 0.02em;
     text-decoration: none;
 }
 
-.maincontacts:hover .maincontacts:focus {
+.maincontacts:hover, .maincontacts:focus {
     color: var(--main-blue);
 }
 
@@ -68,8 +69,7 @@ a {
     color: var(--main-white);
     font-weight: 900;
     font-size: 44px;
-    line-height: 60px;
-    text-align: center;
+    line-height: 1.37em;
     letter-spacing: 0.06em;
     text-transform: uppercase;
 }
@@ -77,12 +77,10 @@ a {
 .mainpagebox button {
     color: var(--main-white);
     font-size: 16px;
-    line-height: 30px;
-    display: flex;
-    align-items: center;
-    text-align: center;
+    line-height: 1.88em;
     letter-spacing: 0.06em;
     background-color: var(--main-blue);
+    cursor: pointer;
 }
 
 h2,
@@ -93,15 +91,27 @@ h3 {
 h2 {
     font-weight: 700;
     font-size: 36px;
-    line-height: 42px;
-    text-align: center;
+    line-height: 1.17em;
     letter-spacing: 0.03em;
+}
+
+.visually-hidden {
+        position: absolute;
+        white-space: nowrap;
+        width: 1px;
+        height: 1px;
+        overflow: hidden;
+        border: 0;
+        padding: 0;
+        clip: rect(0 0 0 0);
+        clip-path: inset(50%);
+        margin: -1px; 
 }
 
 .titlebenefits {
     font-weight: 700;
     font-size: 14px;
-    line-height: 16px;
+    line-height: 1.14em;
     letter-spacing: 0.03em;
     text-transform: uppercase;
 }
@@ -110,15 +120,18 @@ h2 {
     color: var(--main-grey);
     font-weight: 400;
     font-size: 14px;
-    line-height: 24px;
+    line-height: 1.7em;
     letter-spacing: 0.03em;
+}
+
+.team {
+    background-color: #F5F4FA;
 }
 
 .teammember {
     font-weight: 500;
     font-size: 16px;
-    line-height: 19px;
-    text-align: center;
+    line-height: 1.88em;
     letter-spacing: 0.03em;
 }
 
@@ -126,15 +139,23 @@ h2 {
     color: var(--main-grey);
     font-weight: 400;
     font-size: 16px;
-    line-height: 19px;
-    text-align: center;
+    line-height: 1.88em;
     letter-spacing: 0.03em;
+}
+
+footer {
+    background-color: var(--main-background);
+}
+
+.logostudio {
+    color: var(--main-white);
 }
 
 address {
     font-weight: 400;
+    font-style: normal;
     font-size: 14px;
-    line-height: 24px;
+    line-height: 1.7em;
     letter-spacing: 0.03em;
     text-decoration: none;
 }
@@ -147,17 +168,30 @@ address {
     color: rgba(255, 255, 255, 0.6);
 }
 
-.projectselector {
+.postaladdress:hover, .postaladdress:focus {
+    color: var(--main-blue);
+}
+
+.otheraddress:hover, .otheraddress:focus {
+    color: var(--main-blue);
+}
+
+.projects {
+    list-style: none;
+}
+
+.projects button {
     color: var(--main-blackish);
     font-weight: 500;
     font-size: 16px;
-    line-height: 26px;
-    text-align: center;
+    line-height: 1.6em;
     letter-spacing: 0.03em;
-    background-color: var(--main-grey);
+    background-color: #F5F4FA;
+    cursor: pointer;
+    border-radius: 4px;
 }
 
-.projectselector:hover .projectselector:focus {
+.projectsbutton:hover, .projectsbutton:focus {
     background-color: var(--main-blue);
     color: var(--main-white);
 }
@@ -166,7 +200,7 @@ address {
     color: var(--main-blackish);
     font-weight: 700;
     font-size: 18px;
-    line-height: 36px;
+    line-height: 2em;
     letter-spacing: 0.06em;
     text-decoration: none;
 }
@@ -175,7 +209,7 @@ address {
     color: var(--main-grey);
     font-weight: 400;
     font-size: 16px;
-    line-height: 30px;
+    line-height: 1.88em;
     letter-spacing: 0.03em;
     text-decoration: none;
 }
